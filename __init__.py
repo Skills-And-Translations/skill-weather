@@ -35,9 +35,9 @@ LOG = getLogger(__name__)
 
 
 class OWMApi(Api):
-    def __init__(self):
+    def __init__(self,lang):
         super(OWMApi, self).__init__("owm")
-        self.lang = "en"
+        self.lang = lang
         self.observation = ObservationParser()
         self.forecast = ForecastParser()
 
@@ -100,7 +100,7 @@ class WeatherSkill(MycroftSkill):
         if key and not self.config.get('proxy'):
             self.owm = OWM(key)
         else:
-            self.owm = OWMApi()
+            self.owm = OWMApi(self.config_core.get('lang')[0:2])
 
     def initialize(self):
         self.__build_current_intent()

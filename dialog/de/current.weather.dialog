@@ -1,0 +1,2 @@
+ueber {{location}} hat es {{condition}} und {{temp_current}} grad. Es wird nicht heisser als {{temp_max}} und nicht kaelter als {{temp_min}} grad.
+In {{location}} hat es {{condition}} und {{temp_current}} grad, mit einer hoechstwert temperatur von {{temp_max}}, bleibt aber ueber {{temp_min}} grad.

@@ -1,0 +1,2 @@
+Morgen wird es {{condition}} in {{location}}, von {{temp_min}} bis {{temp_max}} grad
+In {{location}} wird es morgen bis {{temp_max}} warm und {{temp_min}} kalt. Der Himmel liefert {{condition}}
